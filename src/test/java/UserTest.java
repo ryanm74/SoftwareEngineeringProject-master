@@ -7,10 +7,10 @@ public class UserTest {
 
     @Test
     public void getUserTest() {
-        Student Mike = new Student("Tommy Curley", "22/06/1994", 25);
+        Student Peter = new Student("Peter Treacy", "13/05/1995", 25);
 
-        String Expected = "tommycurley25";
-        String Actual = Mike.getUsername();
+        String Expected = "petertreacy25";
+        String Actual = Peter.getUsername();
         assertEquals(Expected, Actual);
 
     }
