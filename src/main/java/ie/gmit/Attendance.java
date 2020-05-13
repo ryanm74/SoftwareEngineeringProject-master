@@ -2,35 +2,26 @@ package ie.gmit;
 
 import java.util.*;
 
-public class Module {
-    private String Name;
-    private String ID;
+public class Attendance {
+
+    private String Attendance;
     private ArrayList<Student> Students;
 
-
-    public Module(String name, String id){
-        Name = name;
-        ID = id;
+    public Attendance(String attendance){
+        Attendance = attendance;
         this.Students = new ArrayList<>();
-    }
 
 
-    //getters and setters
-    public void setName(String name){
-        Name = name;
+
     }
 
-    public String getName(){
-        return Name;
+    public void setAttendance(String attendance){
+        Attendance = attendance;
     }
 
-    public void setID(String id){
-        ID = id;
+    public String getAttendance(String days){
+        return Attendance;
     }
-    public String getID(){
-        return ID;
-    }
-
 
     public ArrayList<Student> getStudents() {
         return Students;
@@ -53,10 +44,8 @@ public class Module {
     @Override
     public String toString(){
 
-        return "Module Name: " + Name + " Module ID: " + ID;
+        return "Day of the week is: " + Attendance;
     }
 
 
 }
-
-

@@ -8,6 +8,7 @@ public class Programme {
 
     private String Name;
     private ArrayList<Module> Modules;
+    private ArrayList<Grade> Grades;
     private DateTime Start;
     private DateTime End;
 
@@ -59,6 +60,11 @@ public class Programme {
 
     }
 
+    public ArrayList<Grade> getGrades() {
+        return Grades;
+    }
+
+
     public void deleteModule(Module mod) {
         Modules.remove(mod);
     }
@@ -68,4 +74,5 @@ public class Programme {
         return "Course: " + this.Name;
 
     }
+
 }

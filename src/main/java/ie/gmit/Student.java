@@ -1,15 +1,18 @@
 package ie.gmit;
 
 
+import java.util.ArrayList;
 import java.util.UUID;
 
 public class Student {
 
     private String Name;
+    private ArrayList<Grade> Grades;
     private String DOB;
     private int Age;
     private String ID;
     private Programme Programme;
+    private Object Grade;
 
 
     public Student(String name, String dob, int age) {
@@ -17,14 +20,10 @@ public class Student {
         this.DOB = dob;
         this.Age = age;
         this.ID = createId();
+        this.Grades = new ArrayList<>();
 
     }
 
-
-    //creating the username by concatinating name and age, removing spaces and making it all lower case
-    public String getUsername() {
-        return this.getName().replaceAll("\\s", "").toLowerCase() + this.getAge();
-    }
 
     //getters and setters
     public String getName() {
@@ -66,6 +65,12 @@ public class Student {
     }
 
 
+
+    public Grade getStudent() {
+        return null;
+    }
+
+
     public void setProgramme(Programme Programme) {
         this.Programme = Programme;
     }
@@ -78,6 +83,8 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Name: " + this.Name + " Age: " + this.Age + " ID: " + this.ID + " Username: " + this.getUsername();
+        return "Name: " + this.Name + " Age: " + this.Age + " ID: " + this.ID;
     }
+
+
 }

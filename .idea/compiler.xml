@@ -9,5 +9,8 @@
         <module name="SoftwareEngineeringProject-master" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="SoftwareEngineeringProjectTest-master" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
